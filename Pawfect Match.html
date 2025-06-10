@@ -11,7 +11,6 @@
             margin: 100px auto;
             text-align: center;
             position: relative;
-            z-index: 1;
             background: white;
         }
         
@@ -28,7 +27,6 @@
             width: 500px;
             height: 600px;
             position: relative;
-            z-index: 0;
         }
         
         .button-group {
@@ -40,51 +38,17 @@
             display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
-            margin-left: -50px;
             cursor: pointer;
         }
         
-        .button1 {
+        .adopt-button {
             background-color: aquamarine;
             color: white;
         }
         
-        .button2 {
+        .pass-button {
             background-color: red;
             color: white;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            position: relative;
-            min-height: 100vh;
-        }
-        
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('/images/pawprint.png');
-            opacity: 0.05;
-            z-index: 0;
-            background-repeat: repeat;
-            background-size: 150px;
-            pointer-events: none;
-        }
-        /* This was misplaced before */
-        
-        #app {
-            position: relative;
-            z-index: 1;
-            padding: 2rem;
         }
     </style>
 </head>
@@ -94,15 +58,14 @@
         <h1>Bruno</h1>
         <p>Age: 3 Months</p>
         <p>Breed: Maltese</p>
+        <p>Length: 105cm</p>
     </div>
     <div class="card">
         <img src="images/dog1.jpeg" class="dog-image">
-        <div class="button-group">
-            <button type="button" class="button1">Adopt</button>
-            <button type="button" class="button2">Pass</button>
-        </div>
+
     </div>
-    <button type="button"> wellwellwell</button>
-</body>
+    <button type="button"> Adopt</button>
+    <button type="button"> Pass</button>
+
 
 </html>
